@@ -2,7 +2,7 @@ package cop2805C;
 
 public class Array {
 
-	public static int findIndex(int array[], int value)
+	public int findIndex(int array[], int value)
     {
   
       
