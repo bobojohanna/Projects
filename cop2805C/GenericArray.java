@@ -1,10 +1,8 @@
 package cop2805C;
 
-public class Array {
+public class GenericArray<T>{
 
-    private int index;
-
-    public int findIndex(int[] array, int value, float[] floatArray, float fValue, String[] strArray, String StrValue) {
+    public int findIndex(T[] array, T value) {
 
         if (array == null) {
             return -1;
@@ -14,9 +12,8 @@ public class Array {
         int i = 0;
 
         while (i < len) {
-
             // return the index
-            if (array[i] == value) {
+            if (array[i].equals(value)) {
                 return i;
             } else {
                 i = i + 1;
